@@ -116,3 +116,24 @@ checkBlocksVisibility();
 window.addEventListener("scroll", function () {
   checkBlocksVisibility();
 });
+
+// Send form
+const form = document.querySelector(".form");
+const inputName = document.querySelector('input[name="name"]');
+const inputEmail = document.querySelector('input[name="email"]');
+const inputPhone = document.querySelector('input[name="phone"]');
+const inputOrgName = document.querySelector('input[name="organization_name"]');
+const inputMessage = document.querySelector('input[name="message"]');
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const data = {
+    name: inputName.value,
+    email: inputEmail.value,
+    phone: inputPhone.value,
+    organization_name: inputOrgName.value,
+    message: inputMessage.value,
+  };
+
+  console.log(data);
+});

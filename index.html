@@ -227,15 +227,35 @@
         <img class="cooperation-img" src="./img/cooperation-man.svg" />
         <form action="" class="form">
           <h3 class="form-title">Готовы начать?</h3>
-          <input type="text" class="input" placeholder="ФИО" />
-          <input type="text" class="input" placeholder="Почта" />
-          <input type="text" class="input" placeholder="Номер телефона" />
           <input
+            type="text"
+            class="input"
+            placeholder="ФИО"
+            name="name"
+            required
+          />
+          <input
+            type="text"
+            class="input"
+            placeholder="Почта"
+            name="email"
+            required
+          />
+          <input
+            required
+            type="text"
+            class="input"
+            placeholder="Номер телефона"
+            name="phone"
+          />
+          <input
+            name="organization_name"
             type="text"
             class="input"
             placeholder="Наименование организации"
           />
           <input
+            name="message"
             type="text"
             class="input"
             placeholder="Комментарий или вопрос"
